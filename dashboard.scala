@@ -12,6 +12,8 @@ object dashboard {
   
   def main(args:Array[String]){
     
+    val sample_commit;
+    
     val spark = SparkSession.builder().appName("Samplespark")
                 .master("local[*]").enableHiveSupport().getOrCreate();
     System.setProperty("hadoop.home.dir","E:\\HADOOP");
